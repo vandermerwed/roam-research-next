@@ -1,0 +1,63 @@
+/* Andy Matuschak */
+.roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+
+#right-sidebar {
+  background-color: white !important;
+}
+
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  /* Below is for masonry layout */
+  flex-flow: column wrap;
+}
+
+#right-sidebar #roam-right-sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  padding: 10px;
+  border: 0.5px solid #e4e9ec !important;
+  border-radius: 5px;
+  background-color: white !important;
+  align-self: flex-start;
+  margin-right: 0px !important;
+  /* Below is for masonry layout */
+  margin-bottom: 16px;
+  min-height: fit-content;
+  width: 600px;
+}
+
+#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 780px;
+}
+
+.roam-log-container .roam-log-page {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white !important;
+}
+
+/* Scrollbar improvements */
+div::-webkit-scrollbar {
+    width: 3px !important;
+    height: 3px !important;
+}
+
+div::-webkit-scrollbar-track {
+    background-color: #ffffff !important;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: #d1dbe2 !important;
+}
